@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Rites & Musiques du Pays Gin</title>
+    <meta name="description" content="Rites & Musiques du Pays Gin - Documentaires et partitions traditionnelles">
+    <meta property="og:title" content="Rites & Musiques du Pays Gin">
+    <meta property="og:description" content="Découvrez les traditions musicales du peuple Gin">
+    <meta property="og:image" content="assets/icon-192.png">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/icon-192.png">
+    <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+    <div class="background"></div>
+
+    <main class="container">
+        <h1>Rites & Musiques du Pays Gin</h1>
+        <div class="buttons">
+            <button id="btn-video">🎬 Regardez le documentaire</button>
+            <button id="btn-gallery">🎵 Galerie partitions</button>
+        </div>
+    </main>
+
+    <!-- Modale Vidéo -->
+    <div id="video-modal" class="modal" role="dialog" aria-modal="true">
+        <button class="close" aria-label="Fermer">&times;</button>
+        
+        <div id="video-selection">
+            <h2>Choisissez un documentaire</h2>
+            <div class="video-list">
+                <div class="video-card" data-video="https://drive.google.com/file/d/1y5Heoz-nYefznzDj3X2DOentEpLLDhel/preview">
+                    <span class="icon">🎬</span>
+                    <h3>Documentaire 1</h3>
+                    <p>Titre ou courte description ici</p>
+                </div>
+                <div class="video-card" data-video="https://drive.google.com/file/d/1eJ1pAZdFnqmmkBBqDCJxjuzQImaB91-n/preview">
+                    <span class="icon">🎬</span>
+                    <h3>Documentaire 2</h3>
+                    <p>Titre ou courte description ici</p>
+                </div>
+            </div>
+        </div>
+
+        <iframe id="yt-player" class="hidden" 
+                style="width: 95%; max-width: 900px; aspect-ratio: 16/9; border: none; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.6);"
+                allow="autoplay; encrypted-media; picture-in-picture" 
+                allowfullscreen></iframe>
+        <button id="back-to-list" class="hidden">← Retour à la liste</button>
+    </div>
+
+    <!-- Modale Galerie -->
+    <div id="gallery-modal" class="modal" role="dialog" aria-modal="true">
+        <button class="close" aria-label="Fermer">&times;</button>
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+
+    <!-- 💬 BULLE WHATSAPP FLOTTANTE -->
+    <a href="https://wa.me/22890097874?text=Bonjour%20Professeur%20GOEH-AKUE%20Adovi,%20je%20souhaite%20en%20savoir%20plus%20sur%20les%20Rites%20et%20Musiques%20du%20Pays%20Gin." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contacter le Professeur sur WhatsApp">
+       💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
